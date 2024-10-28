@@ -1,0 +1,102 @@
+ 
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding:0;
+            background-color: #f4f4f4;
+            }
+            .faq-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            }
+            .faq-item h3 {
+            margin:0;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            color: black;
+            border-radius: 5px;
+            }
+            .faq-item p {
+            margin: 0;
+            padding: 10px;
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            }
+        </style>
+        <script>
+            function toggleAnswer(id){
+                var answer = document.getElementById(id);
+                if (answer.style.display === "none" || answer.style.display === ""){
+                    answer.style.display = "block";
+                }else{
+                    answer.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="faq-container">
+
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer0')">Wer hat den Scrum Guide geschrieben?</h3>
+            <p id="answer0">Ken Schwaber und Jeff Sutherland haben den Scrum Guide geschrieben.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer1')">Wie viele Seiten umfasst der Scrum Guide 2020?</h3>
+            <p id="answer1">13</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer2')">Warum ist es wichtig, dass der Scrum Guide nicht verändert wird?</h3>
+            <p id="answer2">Der Scrum Guide enthält die Definition von Scrum. Jedes Element von Scrum dient einem bestimmten Zweck, der für den Gesamtwert und die mit Scrum erzielten Ergebnisse wesentlich ist. Den Kern oder die Grundideen von Scrum zu verändern, Elemente wegzulassen oder den Regeln von Scrum nicht zu folgen, verdeckt Probleme, begrenzt den Nutzen und macht Scrum im Zweifel sogar nutzlos.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer3')">Wie viele Seiten umfasst der Scrum Guide im Deutschen?</h3>
+            <p id="answer3">14</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer4')">Was ist der Scrum Guide und was ist sein Zweck?</h3>
+            <p id="answer4">Der Scrum Guide ist ein Leitfaden für Scrum, der die Definition von Scrum und die Spielregeln für seine Anwendung enthält. Sein Zweck ist es, Menschen auf der ganzen Welt dabei zu helfen, Scrum zu verstehen und erfolgreich anzuwenden.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer5')">Wer sind die Autoren des Scrum Guides?</h3>
+            <p id="answer5">Ken Schwaber und Jeff Sutherland</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer6')">Wo wurde Scrum zum ersten Mal auf einer Konferenz vorgestellt?</h3>
+            <p id="answer6">OOPSLA Konferenz 1995</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('answer7')">Wann wurde der Scrum Guide zum ersten Mal veröffentlicht?</h3>
+            <p id="answer7">2010</p>
+        </div>
+     
+        </div>
+    </body>
+    </html>
+    
